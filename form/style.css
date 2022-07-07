@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    text-align: center;
+}
+
+.firstname, .lastname, .password, .confirm{
+    width: 40%;
+    height: 10px;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+
+.phonenumber, .email{
+    width: 87%;
+    height: 5%;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.register, .signin{
+    width:35%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 20px;
+    padding: 8px;
+    }
+
+.register{
+    background-color: blue;
+    margin-right: 50px;
+    color:white
+    }
+
+.signin{
+    background-color: green;
+    color: White;
+    }
+
+.checkbox{
+    width:12%;
+    float: left;
+    margin:0px;
+    margin-left: 8%;
+    padding:0px;
+    padding-top: 10px;
+    height: 45px;
+    font-size: 18px;
+    }
+
+.text{
+    width:54%;
+    text-align: left;
+    float: right;
+    margin:0 8% 20px 4%;
+    height: 45px;
+    font-size: 14px;
+    padding-right: 30px;
+    }
+
+.text span{
+    background-color: gray;
+    color:#fff;
+    padding: 2px;
+    border-radius: 3px;
+    }
+
+    .text a{
+        text-decoration: none;
+        color: #a2accf;
+    }
+
+div{
+    padding: 3px;
+}
+
