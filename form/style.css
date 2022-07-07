@@ -72,14 +72,14 @@ body{
     padding-right: 30px;
     }
 
-.text span{
-    background-color: gray;
-    color:#fff;
+span{
+    background-color: blue;
+    color: white;
     padding: 2px;
     border-radius: 3px;
     }
 
-    .text a{
+a{
         text-decoration: none;
         color: #a2accf;
     }
