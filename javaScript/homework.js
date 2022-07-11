@@ -5,6 +5,7 @@ function reverse(num){
 }
 console.log(reverse(123456789))
 
+
 //2.
 function palindrome(str){
     let changedStr = str.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'')
@@ -39,6 +40,7 @@ palindrome("dad")
 palindrome("test")
 palindrome("kayak")
 
+
 //3.
 function foo(str){
     let combine = []
@@ -51,11 +53,13 @@ function foo(str){
 }
 console.log(foo("dog"))
 
+
 //4.
 function alphabetOrder(str){
     return str.split('').sort().join('')
 }
 console.log(alphabetOrder("BHDYALDGD"));
+
 
 //5.
 function upperCase(str){
@@ -70,6 +74,7 @@ function upperCase(str){
 }
 console.log(upperCase("this is a test"))
 
+
 //6.
 function longestWord(str){
     let strSplit = str.split(" ")
@@ -83,6 +88,7 @@ function longestWord(str){
     return longestWord 
 }
 console.log(longestWord(" Which of these are the longest? who knows? "))
+
 
 //7.
 function getVowel(str) {
@@ -114,6 +120,7 @@ console.log(dataType(12));
 console.log(dataType(false));
 console.log(dataType("test"));
 
+
 //10.
 function matrix(n){
     var i;
@@ -137,6 +144,7 @@ function matrix(n){
     }
 }
 matrix(4);
+
 
 //11.
 function secondGreatestAndLowest(arr) {
@@ -163,7 +171,16 @@ function factorsNumber(num){
 //15.
 
 //16.
-
+const unique = (str) => {
+    var result = "";
+    for (let i = 0; i < str.length; i++) {
+        if (!result.includes(str[i])) {
+            result += str[i];
+        }
+    }
+    return result;
+};
+console.log(unique("thequickbrownfoxjumpsoverthelazydog"));
 //17.
 
 //18.
@@ -172,19 +189,65 @@ function factorsNumber(num){
 let returnLarger = (arr, num) => arr.filter(n => n > num);
 console.log(returnLarger( [34, 16, 10, 17, 65, 1, 54], 16))
 
+
 //20.
+function generateID(num) {
+    let text = ''
+    const sam_char_list =
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+
+    for (var i = 0; i < num; i++) {
+        text += sam_char_list.charAt(
+        Math.floor(Math.random() * sam_char_list.length)
+        )
+    }
+    return text
+}
 
 //21.
 
 //22.
+function countLet(str, letter) {
+    let count = 0;
+    for(let i = 0; i < str.length; i++) {
+        if(str[i] === letter) {
+            count ++;
+        }
+    }
+    return count;
+};
+console.log(countLet("hello", "l"));
+
 
 //23.
+function nonRepeatingCharacter(x) {
+    for (let i = 0; i < x.length; i++) {
+        let char = x[i];
+        if (x.indexOf(char) == i && x.indexOf(char, i + 1) == -1) {
+        return char;
+        }
+    }
+    return " ";
+}
+console.log(nonRepeatingCharacter("abacddbec"));
+
 
 //24.
 
 //25.
 
+function longestCountryName(name) {
+    return name.reduce(function (longestName, country) {
+        return longestName.length > country.length ? longestName : country;
+    }, "");
+}
+    console.log(
+    longestCountryName(["Australia", "Germany", "United States of America"])
+    );
+
 //26.
+
+
 
 //27.
 
@@ -192,6 +255,7 @@ console.log(returnLarger( [34, 16, 10, 17, 65, 1, 54], 16))
 function test(callback){
     callback()
 }
+
 
 // 29. 
 function fName(){
