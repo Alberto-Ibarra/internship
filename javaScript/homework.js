@@ -216,7 +216,9 @@ function countLet(str, letter) {
     }
     return count;
 };
-console.log(countLet("hello", "l"));
+console.log("**************************");
+console.log(countLet("this is a test", "t"));
+console.log("**************************");
 
 
 //23.
